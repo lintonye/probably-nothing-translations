@@ -25,7 +25,7 @@ function isValidPostAttributes(
   return attributes?.title;
 }
 
-let postsPath = path.join(__dirname, "../posts");
+let postsPath = path.join(__dirname, "../../posts");
 
 export async function getPosts() {
   let dir = await fs.readdir(postsPath);
